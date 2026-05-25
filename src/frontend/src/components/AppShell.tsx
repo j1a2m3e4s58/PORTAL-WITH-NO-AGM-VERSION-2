@@ -40,7 +40,7 @@ import type { ReactNode } from "react";
 import type { User as PortalUser } from "@/types";
 
 const BRAND_LOGO = withBase("assets/images/bcb-logo.png");
-const AGM_PRO_SITE_URL = withBase("connected-sites/agm-pro/index.html");
+const AGM_PRO_SITE_URL = withBase("agm.html");
 
 // ── Nav Config ─────────────────────────────────────────────────────────────────
 
@@ -596,12 +596,6 @@ function DesktopTopNav() {
       to: "/handbook",
       label: "Handbook",
       icon: <BookOpen className="h-4 w-4" />,
-    },
-    {
-      to: "/audit",
-      label: "Audit Logs",
-      icon: <ClipboardList className="h-4 w-4" />,
-      departments: ["IT"],
     },
   ];
   const visibleItems = topNavItems.filter((item) => canSeeNavItem(user, item));
