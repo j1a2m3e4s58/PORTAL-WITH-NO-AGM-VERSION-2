@@ -27,7 +27,7 @@ import { useEffect, useState } from "react";
 const SIDEBAR_COLLAPSED_KEY = "agm-sidebar-collapsed";
 
 const NAV_ITEMS = [
-  { path: "/", label: "Dashboard", icon: LayoutDashboard },
+  { path: "/agm.html", label: "Dashboard", icon: LayoutDashboard },
   { path: "/shareholders", label: "Shareholders", icon: Users },
   {
     path: "/import",
@@ -72,7 +72,7 @@ const NAV_ITEMS = [
 ];
 
 const MOBILE_QUICK_PATHS = [
-  "/",
+  "/agm.html",
   "/registration",
   "/shareholders",
   "/reports",

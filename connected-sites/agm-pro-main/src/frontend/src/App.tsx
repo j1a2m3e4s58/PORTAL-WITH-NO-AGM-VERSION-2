@@ -50,7 +50,7 @@ const changePasswordRoute = createRoute({
 // Protected routes
 const indexRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: "/",
+  path: "/agm.html",
   component: () => (
     <ProtectedRoute>
       <Navigate to="/dashboard" />
