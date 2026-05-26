@@ -326,7 +326,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {mobileQuickItems.length > 0 && (
           <nav className="fixed inset-x-0 bottom-0 z-40 lg:hidden">
             <div
-              className="sea-shell sea-outline grid gap-2 border-t border-border/70 bg-card/95 px-3 py-2.5 shadow-[0_-12px_32px_rgba(4,8,20,0.16)] backdrop-blur-xl dark:bg-[rgba(12,14,22,0.92)] dark:shadow-[0_-12px_32px_rgba(4,8,20,0.28)]"
+              className="sea-shell sea-outline grid gap-1 border-t border-border/70 bg-card/95 px-5 py-2.5 shadow-[0_-12px_32px_rgba(4,8,20,0.16)] backdrop-blur-xl dark:bg-[rgba(12,14,22,0.92)] dark:shadow-[0_-12px_32px_rgba(4,8,20,0.28)]"
               style={{
                 gridTemplateColumns: `repeat(${mobileQuickItems.length}, minmax(0, 1fr))`,
               }}
@@ -342,7 +342,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     key={item.path}
                     to={item.path}
                     className={cn(
-                      "flex min-h-[60px] min-w-0 flex-col items-center justify-center gap-1.5 border px-0.5 pt-1 pb-1.5 text-center",
+                      "flex min-h-[60px] min-w-0 flex-col items-center justify-center gap-1.5 border px-0 pt-1 pb-1.5 text-center",
                       isActive
                         ? "border-primary/35 bg-primary/95 text-primary-foreground shadow-[0_10px_24px_rgba(58,110,255,0.26)]"
                         : "border-transparent bg-transparent text-foreground/62 dark:text-foreground/72",
@@ -361,7 +361,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     </span>
                     <span
                       className={cn(
-                        "font-display max-w-full whitespace-nowrap text-[9px] font-semibold uppercase tracking-[0.08em] leading-none",
+                        "font-display max-w-full whitespace-nowrap text-[9px] font-semibold uppercase tracking-[0.2em] leading-none",
                         isActive
                           ? "text-primary-foreground"
                           : "text-foreground/68 dark:text-foreground/76",
