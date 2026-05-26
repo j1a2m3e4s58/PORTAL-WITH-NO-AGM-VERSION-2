@@ -328,7 +328,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <div
               className="sea-shell sea-outline grid grid-cols-4 border-t border-border/70 bg-card/95 px-3 pb-[calc(0.625rem+env(safe-area-inset-bottom))] pt-2 shadow-[0_-12px_32px_rgba(4,8,20,0.16)] backdrop-blur-xl dark:bg-[rgba(12,14,22,0.92)] dark:shadow-[0_-12px_32px_rgba(4,8,20,0.28)]"
               style={{
-                gridTemplateColumns: `repeat(${mobileQuickItems.length}, minmax(0, 1fr))`,
+                display: "grid",
+                gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
               }}
             >
               {mobileQuickItems.map((item) => {
