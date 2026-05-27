@@ -7,7 +7,10 @@
   "orientation": "any",
   "theme_color": "#0f1119",
   "background_color": "#0f1119",
-  "categories": ["business", "productivity"],
+  "categories": [
+    "business",
+    "productivity"
+  ],
   "icons": [
     {
       "src": "./assets/generated/icon-192-v3.dim_192x192.png",
