@@ -41,7 +41,7 @@ export default function LoginPage() {
     "redirect" in location.search &&
     typeof location.search.redirect === "string"
       ? location.search.redirect
-      : "/dashboard";
+      : "/agm.html";
 
   async function performLogin() {
     if (!username.trim() || !password.trim()) return;

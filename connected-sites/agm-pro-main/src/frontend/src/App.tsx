@@ -53,7 +53,7 @@ const indexRoute = createRoute({
   path: "/agm.html",
   component: () => (
     <ProtectedRoute>
-      <Navigate to="/dashboard" />
+      <DashboardPage />
     </ProtectedRoute>
   ),
 });

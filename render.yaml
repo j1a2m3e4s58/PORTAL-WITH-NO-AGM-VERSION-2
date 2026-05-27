@@ -43,5 +43,47 @@ services:
         source: /mail-api/*
         destination: https://bawjiase-staff-api.onrender.com/*
       - type: rewrite
+        source: /shareholders
+        destination: /agm.html
+      - type: rewrite
+        source: /shareholders/*
+        destination: /agm.html
+      - type: rewrite
+        source: /registration
+        destination: /agm.html
+      - type: rewrite
+        source: /registration/*
+        destination: /agm.html
+      - type: rewrite
+        source: /reports
+        destination: /agm.html
+      - type: rewrite
+        source: /reports/*
+        destination: /agm.html
+      - type: rewrite
+        source: /import
+        destination: /agm.html
+      - type: rewrite
+        source: /import/*
+        destination: /agm.html
+      - type: rewrite
+        source: /admin
+        destination: /agm.html
+      - type: rewrite
+        source: /admin/*
+        destination: /agm.html
+      - type: rewrite
+        source: /board
+        destination: /agm.html
+      - type: rewrite
+        source: /board/*
+        destination: /agm.html
+      - type: rewrite
+        source: /checkin
+        destination: /agm.html
+      - type: rewrite
+        source: /checkin/*
+        destination: /agm.html
+      - type: rewrite
         source: /*
         destination: /index.html

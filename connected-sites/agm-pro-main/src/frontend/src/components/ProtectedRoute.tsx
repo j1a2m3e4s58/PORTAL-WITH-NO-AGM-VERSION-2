@@ -42,7 +42,7 @@ export function ProtectedRoute({
   }
 
   if (allowedRoles && !allowedRoles.includes(user.role)) {
-    return <Navigate to="/" />;
+    return <Navigate to="/agm.html" />;
   }
 
   return <>{children}</>;
