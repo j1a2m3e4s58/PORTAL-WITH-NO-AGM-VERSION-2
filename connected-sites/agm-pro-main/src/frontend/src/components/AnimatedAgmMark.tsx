@@ -14,6 +14,8 @@ const getBankLogoSrc = () => {
   if (
     path === "/agm.html" ||
     [
+      "/login",
+      "/change-password",
       "/dashboard",
       "/shareholders",
       "/registration",
