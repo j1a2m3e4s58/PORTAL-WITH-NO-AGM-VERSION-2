@@ -46,7 +46,7 @@ export function AnimatedAgmMark({
   return (
     <div
       className={cn(
-        "relative inline-flex items-center justify-center overflow-hidden border border-[#5abf95]/40 bg-white shadow-[0_14px_34px_rgba(5,18,13,0.38)]",
+        "relative inline-flex items-center justify-center overflow-hidden rounded-full border border-white/80 bg-white p-1 shadow-[0_14px_34px_rgba(5,18,13,0.38)] ring-4 ring-[#13233a]/70",
         animate ? "agm-mark-shell agm-mark-pulse" : "",
         className,
       )}
@@ -64,7 +64,7 @@ export function AnimatedAgmMark({
         src={getBankLogoSrc()}
         alt=""
         className={cn(
-          "h-full w-full object-contain",
+          "h-full w-full rounded-full object-contain",
           animate ? "agm-mark-core" : "",
         )}
         aria-hidden="true"
