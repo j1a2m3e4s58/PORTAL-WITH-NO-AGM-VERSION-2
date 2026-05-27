@@ -362,7 +362,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     </span>
                     <span
                       className={cn(
-                        "w-full overflow-hidden font-display text-[6px] font-semibold uppercase tracking-[0.1em] leading-none",
+                        "agm-mobile-nav-label w-full overflow-hidden font-display font-semibold uppercase leading-none",
                         isActive
                           ? "text-primary-foreground"
                           : "text-foreground/68 dark:text-foreground/76",
