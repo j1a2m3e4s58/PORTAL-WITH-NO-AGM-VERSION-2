@@ -502,7 +502,7 @@ function TopBar({ onMenuClick }: { onMenuClick: () => void }) {
         )}
         <div className="min-w-0">
           <span className="block truncate font-display text-sm font-semibold text-foreground/70">
-            Bawjiase Area Rural Bank PLC
+            Bawjiase Community Bank PLC
           </span>
         </div>
       </div>
